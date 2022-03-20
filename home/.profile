@@ -1,0 +1,7 @@
+export PATH="$PATH:/home/psy/.local/bin"
+export EDITOR="nvim"
+export BROWSER="firefox"
+export WM="bspwm"
+export PAGER="less"
+export VISUAL="nvim"
+export TERMINAL="alacritty"

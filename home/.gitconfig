@@ -1,0 +1,14 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+#	name = 
+#	email = psy@arch.(none)
+	name = ensyde
+	email = ensyde0@gmail.com
+
+[core]
+	editor = nvim
+
+[gitlab]
+	user = ensyde
+	token = glpat-xgK3pHq1H2icmyzXMvk3
