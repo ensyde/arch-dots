@@ -1,0 +1,92 @@
+add_newline = false
+format = """$username[ ](inverted green)$hostname[   ](inverted cyan)$directory$fill$git_commit$git_branch 
+$character"""
+
+right_format = "$time "
+[character]
+success_symbol = "[ ](blue)"
+error_symbol = "[ ](red)"
+
+[fill]
+symbol = " "
+style = "blue"
+disabled = false
+
+[username]
+style_root = "yellow"
+style_user = "bold inverted green"
+format = "[ $user]($style)"
+show_always = true
+[time]
+disabled = false
+style = "bold inverted blue"
+format = "[ $time ]($style)"
+use_12hr = true
+time_format = "%r"
+
+[directory]
+disabled = false
+read_only = " "
+#home_symbol = "ﰣ "
+home_symbol = "~"
+truncation_length = 3
+style = "inverted cyan"
+format = "[$path ]($style)"
+
+[hostname]
+disabled = false
+style = "bold inverted green"
+format = "[$hostname ]($style)"
+ssh_only = false
+
+[git_branch]
+symbol = "   "
+truncation_length = 7
+truncation_symbol = ""
+style = "inverted purple"
+format = "[ $symbol$branch ]($style)"
+
+[git_commit]
+commit_hash_length = 4
+tag_symbol = " "
+style = "purple"
+format = "[\\($hash$tag\\)]($style)"
+
+[git_status]
+format = "[   ]($style) "
+untracked = ""
+modified = ""
+ahead = "ﰶ"
+behind = "﮾"
+up_to_date = ""
+stashed = ""
+staged = ""
+deleted = ""
+conflicted = ""
+style = "inverted purple"
+
+[python]
+symbol = "  "
+style = "yellow"
+format = "[$symbol]($style)"
+
+[nodejs]
+symbol = " "
+style = "yellow"
+format = "[$symbol]($style)"
+
+[golang]
+symbol = "ﳑ "
+style = "yellow"
+format = "[$symbol]($style)"
+
+[rust]
+symbol = " "
+style = "yellow"
+format = "[$symbol]($style)"
+
+[custom.haskell]
+symbol = " "
+files = [".hs"]
+style = "yellow"
+format = "[$symbol]($style)"
