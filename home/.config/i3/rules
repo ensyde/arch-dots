@@ -1,0 +1,35 @@
+workspace 1 output DisplayPort-0
+workspace 2 output HDMI-A-0
+workspace 6 output HDMI-A-0
+
+for_window [class="kitty"] floating enable
+for_window [class="Lxappearance|lxappearance"] floating enable
+assign [class="Spotify"] 7
+for_window [class="Spotify"] move to workspace 7
+assign [class="Discord"] 6
+for_window [class="Discord"] move to workspace 6
+
+for_window [window_type="dialog"] floating enable
+for_window [window_type="toolbar"] floating enable
+for_window [window_type="utility"] floating enable
+for_window [window_type="splash"] floating enable
+
+#for_window [title="Save Image"] floating enable
+for_window [title="Save Image"] resize set 600 500
+for_window [title="Save Image"] move position center
+for_window [instance="dropdown"] floating enable
+for_window [instance="dropdown"] resize set 625 400
+for_window [instance="dropdown"] move scratchpad
+for_window [instance="dropdown"] border pixel 5
+exec --no-startup-id alacritty -n dropdown
+
+for_window [class="ala-float"] floating enable
+for_window [class="ala-float"] resize set 900 500
+
+for_window [class="feh"] floating enable
+for_window [class="feh"] resize set 1000 800
+for_window [class="feh"] move position center
+
+for_window [class="lutris|Lutris"] floating enable
+for_window [class="lutris|Lutris"] resize set 1000 500
+for_window [class="lutris|Lutris"] move position scratchpad

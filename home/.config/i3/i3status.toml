@@ -1,0 +1,36 @@
+theme = "nord-dark"
+icons = "awesome"
+
+[[block]]
+block = "pacman"
+interval = 600
+format = "{pacman}   {aur}"
+#format_singular = "{both}  "
+format_up_to_date = "  "
+aur_command = "yay -Qua"
+
+
+[[block]]
+block = "music"
+player = "spotify"
+buttons = [ "prev", "play", "next"]
+dynamic_width = true
+on_collapsed_click = "spotify"
+hide_when_empty = true
+separator = "/"
+format = "{combo}"
+smart_trim = true
+
+
+[[block]]
+block = "net"
+device = "wlan0"
+format = " {ssid}"
+
+
+[[block]]
+block = "time"
+format = "%a %d/%m %R"
+timezone = "US/Eastern"
+interval = 60
+locale = "en_US"
