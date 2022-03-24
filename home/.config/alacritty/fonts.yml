@@ -1,0 +1,14 @@
+font:
+  normal:
+    family: "Iosevka Nerd Font"
+  bold:
+    family: "Iosevka Nerd Font"
+  italic:
+    family: "Iosevka Nerd Font"
+  bold_italic:
+    family: "Iosevka Nerd Font"
+  size: 10.0
+
+  #offset:
+    #x: 0
+    #y: 0
