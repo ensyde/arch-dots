@@ -55,3 +55,19 @@ bspc rule -a Pavucontrol state=floating focus=on
 bspc rule -a pcmanfm state=floating follow=on focus=on
 
 bspc rule -a feh state=floating follow=on focus=on
+
+sid=$(wmctrl -lx | grep scratch.scratchpad| cut -d' ' -f1| head -1) \
+&& [ -z "$(echo $sid)" ] \
+	&& alacritty -t scratchpad --class scratch,scratchpad -e zsh -c "macchina; zsh"\
+	& sleep 1 \
+	&& sid=$(wmctrl -lx | grep scratch.scratchpad| cut -d' ' -f1| head -1) \
+	&& echo "$sid" > /tmp/scratchID ;
+
+
+# LF
+lid=$(wmctrl -lx | grep lf.lf| cut -d' ' -f1| head -1) \
+&& [ -z "$(echo $lid)" ] \
+	&& alacritty --config-file .config/alacritty/lf.yml -t lf --class lf,lf -e lf-ueberzug \
+	& sleep 1 \
+	&& lid=$(wmctrl -lx | grep lf.lf| cut -d' ' -f1| head -1) \
+	&& echo "$lid" > /tmp/lfID;
