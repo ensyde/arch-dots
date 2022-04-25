@@ -1,0 +1,107 @@
+$bg: #282c34;
+$fg: #abb2bf;
+$blue: #6791c9;
+$green: #87c7a1;
+$black: #2c323c;
+$cyan: #70b9cc;
+$red: #df5b61;
+$yellow: #e5c07b;
+$magenta: #c678dd;
+
+* {
+  all: unset; //Unsets everything so you can style everything from scratch
+  font-family: "JetBrainsMono Nerd Font";
+  font-size: 16px;
+  //font-weight: bold;
+}
+
+//Global Styles
+.bar {
+  background-color: $bg;
+  //color: #abb2bf;
+  border-radius: 22px;
+  padding: 3px;
+}
+
+// Styles on classes (see eww.yuck for more information)
+.sidestuff {
+  font-size: 14px;
+}
+.sidestuff slider {
+  all: unset;
+  color: #ffd5cd;
+  min-width: 40px;
+}
+
+.metric scale trough highlight {
+  all: unset;
+  background-color: #D35D6E;
+  color: #000000;
+  border-radius: 10px;
+}
+.metric scale trough {
+  all: unset;
+  background-color: #4e4e4e;
+  border-radius: 50px;
+  min-height: 9px;
+  min-width: 90px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.label-ram {
+  font-size: 14px;
+  
+}
+.workspaces button:hover {
+  color: $blue;
+}
+.music {
+  background-color: $blue;
+  color: $bg;
+  padding: 1px 17px 1px 17px;
+  border-radius: 13px;
+  margin-right: 45px;
+}
+
+.0 , .01, .02, .03, .04, .05, .06,
+.011, .022, .033, .044, .055, .066{
+  ;;margin: 0px 5px 0px 5px;
+  margin-top:2px;
+  margin-left: 12px;
+  padding-left: 0px;
+}
+.workspace {
+  background-color:$blue;
+  color: $bg;
+}
+/* Unoccupied */
+.0 {
+color: $fg;
+}
+
+/* Occupied */
+.01, .02, .03, .04, .05, .06 {
+  color: $blue;
+}
+
+/* Focused */
+.011, .022, .033, .044, .055, .066 {
+  color: $green;
+}
+.time {
+  background-color: $cyan;
+  color: $bg;
+  padding: 3px 15px 3px 15px;
+  border-radius: 13px;
+  margin-right: 10px;
+}
+
+.launcher-btn {
+  border-radius: 10px;
+  background-color: $blue;
+  margin: 0px 15px 0px 15px;
+  color: $bg;
+  padding: 1px 8px 1px 8px;
+  font-size: 18px;
+}
+
